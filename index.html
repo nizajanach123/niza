@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet ">
+      <title>Fylo data storage component</title>
+    </head>
+
+  <body>
+    <div class="background">
+      <img class="background__photo" src="assets/bg-desktop.png" alt="photo">
+    </div>
+    <div class="cards">
+        <div class="cards__fylo">
+          <div class="cards__fylo__header">
+            <img  class="cards__fylo__header-logo" src="assets/logo.svg" alt="logo">
+          </div>
+          <div class="cards__fylo__detils">
+            <div class="cards__fylo__detils__container">
+              <img class="icon-document" src="assets/icon-document.svg" alt="icon-document">
+            </div>
+            <div class="cards__fylo__detils__container">
+              <img class="icon-folder" src="assets/icon-folder.svg" alt="icon-folder">
+            </div>
+            <div class="cards__fylo__detils__container">
+              <img class="icon-upload" src="assets/icon-upload.svg" alt="icon-upload">
+            </div>
+          </div>
+        </div>
+        <div class="cards__second">
+            <div class="cards__second__whitecard"> 
+              <h3 class="cards__second__whitecard__text">185 GB LEFT</h3>
+              <div class="cards__second__whitecard__traingel"> 
+              </div>
+            </div>
+            <div class="cards__second__header">
+              <h2 class="cards__second__header__text"> You’ve used  <label class="bold">815 GB </label>of your storage</h2>
+            </div>
+            <div class="cards__second__icon">  
+            </div>
+            <div class="cards__second__detils">
+              <div class="slidecontainer">
+                <input class="slider" type="range" min="1" max="100" value="50" id="myRange">
+                <p><span id="demo"></span></p>
+              </div>
+              <div class="cards__second__detils__text">
+                  <h6 class="cards__second__detils__text-1"> 0 GB</h6>
+                  <h6 class="cards__second__detils__text-2">1000 GB </h6>
+              </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

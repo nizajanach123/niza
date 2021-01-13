@@ -1,0 +1,16 @@
+html{
+    font-size: 10px;
+}
+body{
+    background-color: $background-color;
+    color: white;
+    font-family: 'Hind', sans-serif;
+}
+.background{
+    position: relative;
+}
+.background__photo{
+    position: absolute;
+    top: 93px;
+}
+

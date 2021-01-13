@@ -1,0 +1,98 @@
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 260px;
+    @include respond(tab-land) { 
+      display: block; 
+  }
+    &__fylo{
+      background-color: $color-fylo-card;
+      width: 305px;
+      height: 160px;
+      position: relative;
+      border-radius: 9px 95px 9px 9px;
+      @include respond(tab-land) { 
+        margin-left:92px;
+    }
+      &__header-logo{
+        margin-top: 27px;
+        margin-left: 29px;
+        @include respond(tab-land) { 
+        margin-left: 16px;; 
+      }
+      }
+      &__detils{
+        display: flex;
+        justify-content:space-evenly;
+        margin-top: 19px;
+        width: 180px;
+        &__container{
+          background-color: $background-color;
+          padding: 2px 6px;
+          border-radius: 7px;
+        }
+      }
+    }
+    &__second{
+      background-color:$color-second-card;
+      width: 430px;
+      height: 130px;
+      border-radius: 9px;
+      margin: 30px;
+      position: relative;
+      @media (max-white:600px) {
+        margin-top: 50px;
+      }
+      &__whitecard{
+        background-color:$color-white-card;
+        height: 50px;
+        width: 120px;
+        position: absolute;
+        margin: -36px 238px;
+        border-radius: 7px;
+        @include respond(tab-land) { 
+          left: 43px;
+          top:-8px;
+      }
+        &__traingel{
+          width: 25px;
+          height: 26px;
+          background-color: white;
+          margin-left: 98px;
+          margin: -6px 0px 0px 95px;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%);
+        }
+        &__text{
+          color: black;
+          margin-left: 26px;
+          font-size: 1.4rem;
+          @include respond(tab-land) { 
+            display: flex;
+            justify-content: space-around;
+        }
+        }
+      }
+      &__header{
+        margin-left: 23px;
+        margin-top: 29px;
+      }
+      &__detils__text-1{
+        display: inline;
+        font-size: 1.2rem;
+        margin-left: 24px;
+        @include respond(tab-land) { 
+          margin-left: 32px;
+      }
+      }
+      &__detils__text-2{
+        display: inline;
+        font-size: 1.2rem;
+        margin-left: 270px;
+        @include respond(tab-land) { 
+          font-size: 1.2rem;
+          margin-left: 302px;
+          margin-top: 0;
+      }
+      }
+      }
+  }
